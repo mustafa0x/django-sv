@@ -1,0 +1,27 @@
+{
+  "extends": "@tsconfig/svelte/tsconfig.json",
+  "compilerOptions": {
+    "target": "esnext",
+    "baseUrl": ".",
+    "resolveJsonModule": true,
+    "allowJs": true,
+    "checkJs": true,
+    "paths": {
+      "~/*": [
+        "client/*"
+      ],
+      "$lib": [
+        "./client/lib"
+      ],
+      "$lib/*": [
+        "./client/lib/*"
+      ]
+    },
+  },
+  "include": [
+    "client/**/*.d.ts",
+    "client/**/*.ts",
+    "client/**/*.js",
+    "client/**/*.svelte"
+  ]
+}

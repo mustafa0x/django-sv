@@ -1,0 +1,9 @@
+/*
+!/client
+!/deploy.js
+!/eslint.config.js
+!/svelte.config.js
+!/tailwind.config.js
+!/vite.config.js
+!/prettier.config.js
+!/playwright.config.js

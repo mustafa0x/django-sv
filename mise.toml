@@ -1,0 +1,6 @@
+[tasks.dev]
+alias = 'default'
+run = 'pnpm dev'
+
+[env]
+VITE_PORT = 5020

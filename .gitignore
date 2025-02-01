@@ -1,0 +1,7 @@
+/dist
+package-lock.json
+pnpm-lock.yaml
+/misc
+auto-imports.d.ts
+node_modules
+.env
