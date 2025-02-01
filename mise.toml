@@ -1,6 +1,23 @@
+[tools]
+poetry = { version = 'latest', pyproject = 'pyproject.toml' }
+python = '3.12'
+
 [tasks.dev]
 alias = 'default'
+depends = ['dev-api']
+
+[tasks.dev-client]
 run = 'pnpm dev'
+
+[tasks.dev-api]
+env = { FORCE_COLOR = '1' }
+description = 'Start API'
+run = 'uvicorn db.api:app --reload --port $API_PORT'
 
 [env]
 VITE_PORT = 5020
+API_PORT = 8000
+API_WORKERS = 4
+
+POSTGRES_PORT = 5432
+REDIS_PORT = 6379
